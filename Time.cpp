@@ -19,13 +19,20 @@ void Time::set(int hr, int minute)
 	min = minute;
 	
 }
-void Time::get(int hr, int minute)
+
+void Time::get(int& hr, int& minute)
 {
 	
-	hr = &hour;
-	minute = &min;
-	cout << *hr << "  555555 " << *minute << endl;
+	hr = hour;
+	minute = min;
+	
 }
+/* ostream Time::operator<<(ostream &output,const Time &T)
+{
+	output << T.hour <<" : "<<T.min ;
+	return output;
+}*/
+
 
 Time::~Time()
 {
