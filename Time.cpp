@@ -1,5 +1,6 @@
 #include "Time.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 Time::Time()
@@ -27,11 +28,12 @@ void Time::get(int& hr, int& minute)
 	minute = min;
 	
 }
-/* ostream Time::operator<<(ostream &output,const Time &T)
+ostream& operator<<(ostream& output, const Time& T)
 {
-	output << T.hour <<" : "<<T.min ;
+	output << T.hour << ":" << T.min;
 	return output;
-}*/
+
+}
 
 
 Time::~Time()
